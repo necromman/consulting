@@ -8,7 +8,9 @@
       <excludeFolder url="file://$MODULE_DIR$/plugins" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/www/lib/bootstrap/node_modules" />
     </content>
+    <content url="file://$MODULE_DIR$/www/lib/bootstrap/node_modules" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
