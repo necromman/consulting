@@ -5,3 +5,5 @@ div[class*="col-"]{padding: 2px 2px !important;}
 .height-100{height: 100%}
 .app .container-fluid{width: 1280px; min-width: 1280px}
 .col-md-4{}
+.first-col{text-align: center;padding-top: 440px;}
+.first-col i{font-size: 4em}
