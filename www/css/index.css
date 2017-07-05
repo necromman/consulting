@@ -33,9 +33,10 @@ table{width: 100%;text-align: center}
 .first-col .card{text-align: center;padding-top: 450px;}
 .first-col i{font-size: 4em}
 
-.second-col table tr td{color: red;padding: 4px 0;}
-.second-col table tr td:first-child{text-align: left;padding-left: 60px;color: inherit}
+.second-col table tr td{color: red;padding: 4px 0;font-weight: 600;}
+.second-col table tr td:first-child{width: 40%;text-align: left;padding-left: 60px;color: inherit;font-weight: inherit}
 .second-col i{font-size: 2.5em}
 .second-col .sum-style{border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;height: 40px;}
 .second-col .devi-sum-style{border-top: 1px solid #ddd;}
-.second-col .insta{text-align: right !important;padding-right: 5px;font-size: 11px !important;}
+.second-col .devi-sum-style td{padding-top: 5px;}
+.second-col .insta{text-align: right !important;padding-right: 5px;font-size: 11px !important;color: red !important;border-bottom: 1px solid #ddd;font-weight: 600 !important;}
