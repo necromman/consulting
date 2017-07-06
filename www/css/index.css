@@ -5,16 +5,25 @@ table{width: 100%;text-align: center}
 /*==== display*/
 .display-none{display: none}
 
+/*==== color*/
+.c-red{color: red}
+
 /*==== size*/
 .height-100{height: 100%}
+
+/*==== font*/
 .font-1em{font-size: 1em}
 .font-2em{font-size: 2em}
-.font-3em{font-size: 3em}
+.font-3em{font-size: 3em;}
+.font-weight100{font-weight:100}
+.font-weight600{font-weight:600}
+
 
 /*==== align*/
 .text-center{text-align: center}
 .text-left{text-align: left}
 .text-right{text-align: right}
+.valign-wrapper{display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-align-items: center;-ms-flex-align: center;align-items: center;}
 
 /*==== padding*/
 .padding0{padding: 0px !important;}
@@ -25,18 +34,24 @@ table{width: 100%;text-align: center}
 
 
 
-.app{background-color: #f2f4f7; min-height: 800px;max-height: 800px;height: 800px}
+.app{background-color: #f2f4f7; min-height: 800px;max-height: 800px;height: 800px;overflow: hidden}
 .card{position: relative;border: 1px solid #dee3eb;background: #fff;height: 795px}
-.second-col .card > div{border-bottom: 1px solid #ddd;padding: 5px 0;}
-.app .container-fluid{width: 1280px; min-width: 1280px}
+@media (min-width: 992px){
+    .app .container-fluid{width: 1280px; min-width: 1280px}
+}
 
 .first-col .card{text-align: center;padding-top: 450px;}
 .first-col i{font-size: 4em}
 
+.second-col .card > div{border-bottom: 1px solid #ddd;padding: 5px 0;}
 .second-col table tr td{color: red;padding: 4px 0;font-weight: 600;}
 .second-col table tr td:first-child{width: 40%;text-align: left;padding-left: 60px;color: inherit;font-weight: inherit}
+.second-col .table-padding0 tr td:first-child{width: 40%;text-align: left;padding-left: 15px;color: inherit;font-weight: inherit}
 .second-col i{font-size: 2.5em}
 .second-col .sum-style{border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;height: 40px;}
 .second-col .devi-sum-style{border-top: 1px solid #ddd;}
 .second-col .devi-sum-style td{padding-top: 5px;}
-.second-col .insta{text-align: right !important;padding-right: 5px;font-size: 11px !important;color: red !important;border-bottom: 1px solid #ddd;font-weight: 600 !important;}
+.second-col .insta{padding-top: 0px;text-align: right !important;padding-right: 30px;font-size: 11px !important;color: red !important;border-bottom: 1px solid #ddd;font-weight: 600 !important;}
+.second-col .total-charge{height: 13%;padding-right: 15px !important;}
+.second-col .total-charge p:nth-child(1){margin-bottom: -5px}
+.second-col .total-charge p:nth-child(2){}
