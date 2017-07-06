@@ -1,5 +1,5 @@
 body,html{height: 100%}
-div[class*="col-"]{padding: 2px 2px}
+div[class*="col-"]{padding: 0 2px 0 2px}
 table{width: 100%;text-align: center}
 
 /*==== display*/
@@ -26,8 +26,8 @@ table{width: 100%;text-align: center}
 .valign-wrapper{display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-align-items: center;-ms-flex-align: center;align-items: center;}
 
 /*==== padding*/
-.padding0{padding: 0px !important;}
-.padding0-15{padding: 0px 15px !important;}
+.padding0{padding: 0 !important;}
+.padding0-15{padding: 0 15px !important;}
 
 /*==== border*/
 .border-none{border: none !important;}
@@ -35,14 +35,15 @@ table{width: 100%;text-align: center}
 
 
 .app{background-color: #f2f4f7; min-height: 800px;max-height: 800px;height: 800px}
-.card{position: relative;border: 1px solid #dee3eb;background: #fff;height: 795px}
+.card{position: relative;border-left: 1px solid #ddd;border-right: 1px solid #ddd;background: #fff;height: 800px}
 @media (min-width: 992px){
     .app{overflow: hidden}
     .app .container-fluid{width: 1280px; min-width: 1280px}
 }
 .card > div{border-bottom: 1px solid #ddd;padding: 5px 0;}
 
-.first-col .card{text-align: center;padding-top: 450px;}
+.first-col{padding-left: 0}
+.first-col .card{text-align: center;padding-top: 450px;border-left: none;}
 .first-col i{font-size: 4em}
 .first-col .card > div{border:none;padding: 0;}
 
@@ -50,22 +51,24 @@ table{width: 100%;text-align: center}
 .second-col table tr td:first-child{width: 40%;text-align: left;padding-left: 60px;color: inherit;font-weight: inherit}
 .second-col .table-padding0 tr td:first-child{width: 40%;text-align: left;padding-left: 15px;color: inherit;font-weight: inherit}
 .second-col i{font-size: 2.5em}
-.second-col .sum-style{border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;height: 40px;}
+.second-col .sum-style{border-top: 1px solid #ddd;height: 40px;}
 .second-col .devi-sum-style{border-top: 1px solid #ddd;}
 .second-col .devi-sum-style td{padding-top: 5px;}
-.second-col .insta{padding-top: 0px;text-align: right !important;padding-right: 30px;font-size: 11px !important;color: red !important;border-bottom: 1px solid #ddd;font-weight: 600 !important;}
-.second-col .total-charge{height: 13%;padding-right: 15px !important;}
+.second-col .insta{padding-top: 0;text-align: right !important;padding-right: 30px;font-size: 11px !important;color: red !important;font-weight: 600 !important;}
+.second-col .total-charge{height: 12%;padding-right: 15px !important;}
 .second-col .total-charge p:nth-child(1){margin-bottom: -5px}
 .second-col .total-charge p:nth-child(2){}
 
 .third-col i{font-size: 2.5em}
-.third-col .row-2{height: 66px}
-.third-col .devi-pic{height: 521px}
+.third-col .row-2{height: 7.7%}
+.third-col .devi-pic{height: 66.9%}
 .third-col .shipment span:nth-child(1){margin-right: 10px}
 .third-col .shipment span:nth-child(2){}
 .third-col .shipment span:nth-child(3){}
 
 
+.fourth-col{padding-right: 0}
+.fourth-col .card{border-right: none}
 .fourth-col .devi-spec-wrap{padding: 25px 0 0 25px;}
 .fourth-col .devi-spec{background-color: lightgrey;height: 560px;
     box-shadow: -2px 3px 6px rgba(0,0,0,0.2);
@@ -109,21 +112,4 @@ table{width: 100%;text-align: center}
 
 .rating[title="5 of 5"]:after {
     content: "★★★★★";
-}
-
-.hreview {
-    padding: 0.5em;
-    width: 20em;
-    border-bottom: 1px solid #eee;
-    border-top: 1px solid #fdfdfd;
-}
-.hreview:nth-child(even) {
-    background-color: #f7f7f7;
-}
-.hreview .item {
-    width: 72%;
-    display: inline-block;
-    font-weight: 600;
-    color: #333;
-    backgroud: transparent;
 }
