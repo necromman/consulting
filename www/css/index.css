@@ -64,3 +64,11 @@ table{width: 100%;text-align: center}
 .third-col .shipment span:nth-child(1){margin-right: 10px}
 .third-col .shipment span:nth-child(2){}
 .third-col .shipment span:nth-child(3){}
+
+.fourth-col .devi-spec{background-color: lightgrey;margin-top: 30px;height: 560px;
+    box-shadow: -2px 3px 6px rgba(0,0,0,0.2);
+}
+.fourth-col .devi-spec > div{height: 24%}
+.fourth-col .devi-spec .devi-spec-i{text-align: center}
+.fourth-col .devi-spec .devi-spec-i i{font-size: 5em}
+.fourth-col .devi-spec .spec-sub{font-weight: 600;font-size: 1.5em;}

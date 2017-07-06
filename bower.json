@@ -18,6 +18,7 @@
     "jquery": "^3.2.1",
     "bootstrap": "^3.3.7",
     "gsap": "GreenSock-JS#^1.20.2",
-    "font-awesome": "fontawesome#^4.7.0"
+    "font-awesome": "fontawesome#^4.7.0",
+    "prefix": "^1.0.3"
   }
 }

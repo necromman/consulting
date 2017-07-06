@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Prefix example</title>
+        <script type="text/javascript" src="../src/prefix.js"></script>
+        <style type="text/css">
+            *{
+                padding:15px 0px;
+            }
+
+            code{
+                border: solid grey 1px;
+                display: block;
+                padding: 5px;
+                margin: 20px 0px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <label>Coffee object before prefix: </label>
+        <code id="before">
+        </code>
+        <br />
+        <label>Coffe object after prefix : </label>
+        <code id="after"></code>
+        
+        <br />
+        <label>Coffee object after prefix and suffix : </label>
+        <code id="after-suffix"></code>
+        
+        <legend>
+            *Example render requires JSON native object. It is not requred for usage.
+        </legend>
+
+      <script type="text/javascript">
+        var coffee = {
+            arabica : "Arabica coffee",
+            robusta : "Robusta coffee"
+        };
+
+        (function(){
+             document.getElementById("before").innerHTML = JSON.stringify(coffee);
+             document.getElementById("after").innerHTML = JSON.stringify( Prefix.key('super-', coffee) );
+             document.getElementById("after-suffix").innerHTML = JSON.stringify( Prefix.key('super-', coffee, '-cup') );
+
+         })();
+      </script>
+    </body>
+</html>

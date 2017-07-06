@@ -1,0 +1,24 @@
+{
+  "name": "prefix",
+  "version": "1.0.1",
+  "homepage": "https://github.com/mraiur/prefix",
+  "authors": [
+    "mraiur <mraiur@gmail.com>"
+  ],
+  "description": "Prefix and/or suffix object keys.",
+  "main": "src/prefix.js",
+  "keywords": [
+    "prefix",
+    "array",
+    "prefix",
+    "key"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
