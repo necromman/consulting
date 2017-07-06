@@ -19,7 +19,6 @@ table{width: 100%;text-align: center}
 .font-weight100{font-weight:100}
 .font-weight600{font-weight:600}
 
-
 /*==== align*/
 .text-center{text-align: center}
 .text-left{text-align: left}
@@ -35,9 +34,10 @@ table{width: 100%;text-align: center}
 
 
 
-.app{background-color: #f2f4f7; min-height: 800px;max-height: 800px;height: 800px;overflow: hidden}
+.app{background-color: #f2f4f7; min-height: 800px;max-height: 800px;height: 800px}
 .card{position: relative;border: 1px solid #dee3eb;background: #fff;height: 795px}
 @media (min-width: 992px){
+    .app{overflow: hidden}
     .app .container-fluid{width: 1280px; min-width: 1280px}
 }
 .card > div{border-bottom: 1px solid #ddd;padding: 5px 0;}
@@ -65,10 +65,65 @@ table{width: 100%;text-align: center}
 .third-col .shipment span:nth-child(2){}
 .third-col .shipment span:nth-child(3){}
 
-.fourth-col .devi-spec{background-color: lightgrey;margin-top: 30px;height: 560px;
+
+.fourth-col .devi-spec-wrap{padding: 25px 0 0 25px;}
+.fourth-col .devi-spec{background-color: lightgrey;height: 560px;
     box-shadow: -2px 3px 6px rgba(0,0,0,0.2);
 }
 .fourth-col .devi-spec > div{height: 24%}
 .fourth-col .devi-spec .devi-spec-i{text-align: center}
-.fourth-col .devi-spec .devi-spec-i i{font-size: 5em}
+.fourth-col .devi-spec .devi-spec-i i{font-size: 5em;text-shadow: -1px 2px 3px rgba(0,0,0,0.5);}
 .fourth-col .devi-spec .spec-sub{font-weight: 600;font-size: 1.5em;}
+.fourth-col .ratings{padding: 35px 0;font-size: 2.7em;}
+
+
+/*==== raring*/
+
+.rating {
+    color: #000;
+    cursor: default;
+    font-size: 0;
+}
+.rating:after {
+    color: gold;
+    font-size: 29px;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.rating[title="1 of 5"]:after {
+    content: "★☆☆☆☆";
+}
+
+.rating[title="2 of 5"]:after {
+    content: "★★☆☆☆";
+}
+
+.rating[title="3 of 5"]:after {
+    content: "★★★☆☆";
+}
+
+.rating[title="4 of 5"]:after {
+    content: "★★★★☆";
+}
+
+.rating[title="5 of 5"]:after {
+    content: "★★★★★";
+}
+
+.hreview {
+    padding: 0.5em;
+    width: 20em;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #fdfdfd;
+}
+.hreview:nth-child(even) {
+    background-color: #f7f7f7;
+}
+.hreview .item {
+    width: 72%;
+    display: inline-block;
+    font-weight: 600;
+    color: #333;
+    backgroud: transparent;
+}
