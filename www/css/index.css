@@ -10,6 +10,7 @@ table{width: 100%;text-align: center}
 
 /*==== size*/
 .height-100{height: 100%}
+.height-20{height: 20%}
 
 /*==== font*/
 .font-1em{font-size: 1em}
@@ -39,11 +40,12 @@ table{width: 100%;text-align: center}
 @media (min-width: 992px){
     .app .container-fluid{width: 1280px; min-width: 1280px}
 }
+.card > div{border-bottom: 1px solid #ddd;padding: 5px 0;}
 
 .first-col .card{text-align: center;padding-top: 450px;}
 .first-col i{font-size: 4em}
+.first-col .card > div{border:none;padding: 0;}
 
-.second-col .card > div{border-bottom: 1px solid #ddd;padding: 5px 0;}
 .second-col table tr td{color: red;padding: 4px 0;font-weight: 600;}
 .second-col table tr td:first-child{width: 40%;text-align: left;padding-left: 60px;color: inherit;font-weight: inherit}
 .second-col .table-padding0 tr td:first-child{width: 40%;text-align: left;padding-left: 15px;color: inherit;font-weight: inherit}
@@ -55,3 +57,10 @@ table{width: 100%;text-align: center}
 .second-col .total-charge{height: 13%;padding-right: 15px !important;}
 .second-col .total-charge p:nth-child(1){margin-bottom: -5px}
 .second-col .total-charge p:nth-child(2){}
+
+.third-col i{font-size: 2.5em}
+.third-col .row-2{height: 66px}
+.third-col .devi-pic{height: 521px}
+.third-col .shipment span:nth-child(1){margin-right: 10px}
+.third-col .shipment span:nth-child(2){}
+.third-col .shipment span:nth-child(3){}
