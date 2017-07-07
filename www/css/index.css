@@ -113,3 +113,7 @@ table{width: 100%;text-align: center}
 .rating[title="5 of 5"]:after {
     content: "★★★★★";
 }
+
+/*=== device-select*/
+.device-select-wrap{position: absolute;width: 1280px;margin: 0 !important;}
+.device-select-wrap .device-select
