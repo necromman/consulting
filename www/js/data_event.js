@@ -1,4 +1,3 @@
 $(function(){
-	alert("first_event");
-	alert("이대훈 섹스")
+    alert("first_event");
 })
