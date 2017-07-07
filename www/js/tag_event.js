@@ -9,7 +9,7 @@ $(function(){
 		}else{
 			v1_div1_Choice_event();
 		}
-		alert("a")
+		alert("abbb")
 	})
 	
 	var installment = $("#v1_div_Installment button")
