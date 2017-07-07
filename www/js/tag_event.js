@@ -1,10 +1,23 @@
 $(function(){
-	var v1_div1 = $("#v1_1_div_1 button");
+	var  choice = $("#v1_div_choice button");
 	
-	v1_div1.click(function(){
+	choice.click(function(){
 		var val = $(this).val();
-		alert(val)
-		if(val == 1){alert("공시지원 이벤트")}else{alert("선택약정 이벤트")}
+		
+		if(val == 1){
+			v1_div1_Disclosure_event();
+		}else{
+			v1_div1_Choice_event();
+		}
+		
 	})
 	
+	var installment = $("#v1_div_Installment button")
+	
+	installment.click(function(){
+		var val = $(this).html();
+		
+		v1_1_Installment_event (val);
+		
+	})
 })
