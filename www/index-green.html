@@ -42,9 +42,9 @@
 
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index-green.css"/>
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
-    
     <title>컨설팅</title>
 </head>
 
@@ -100,9 +100,9 @@
                             <tr>
                                 <td>요금할인프로그램</td>
                                 <td>
-                                    <div class="btn-group btn-group-xs" role="group" aria-label="" id="v1_div_choice">
-                                        <button type="button" class="btn btn-default" value="1">단말기공시지원</button>
-                                        <button type="button" class="btn btn-default" value="2">선택약정할인</button>
+                                    <div class="btn-group btn-group-xs" role="group" aria-label="">
+                                        <button type="button" class="btn btn-default">단말기공시지원</button>
+                                        <button type="button" class="btn btn-default">선택약정할인</button>
                                     </div>
                                 </td>
                                 <!--<td>선택약정할인</td>-->
@@ -138,7 +138,7 @@
                             <tr>
                                 <td>할부개월</td>
                                 <td>
-                                    <div class="btn-group btn-group-sm" role="group" aria-label="" id="v1_div_Installment">
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="">
                                         <button type="button" class="btn btn-default">12</button>
                                         <button type="button" class="btn btn-default">18</button>
                                         <button type="button" class="btn btn-default">24</button>
@@ -215,6 +215,81 @@
 
                 </div>
             </div>
+
+            <div class="col-md-4">
+                <div class="accordion">
+                    <ul class="accordion__list">
+                        <li class="accordion__item">
+                            <div class="accordion__itemTitleWrap">
+                                <h3 class="accordion__itemTitle">제조사를 선택해주세요</h3>
+                                <div class="accordion__itemIconWrap">
+                                    <svg viewBox="0 0 24 24">
+                                        <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="black"
+                                                  stroke-miterlimit="10" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="accordion__itemContent">
+                                <p>samsung</p>
+                                <p>LG</p>
+                                <p>apple</p>
+                                <p>팬텍</p>
+                                <p>기타</p>
+                            </div>
+                        </li>
+                        <li class="accordion__item">
+                            <div class="accordion__itemTitleWrap">
+                                <h3 class="accordion__itemTitle">LTE Mobile</h3>
+                                <div class="accordion__itemIconWrap">
+                                    <svg viewBox="0 0 24 24">
+                                        <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="black"
+                                                  stroke-miterlimit="10" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="accordion__itemContent">
+                                <p>LTE 단말기</p>
+                                <p>3G/일반 단말기</p>
+                                <p>태블릿 단말기</p>
+                                <p>기타</p>
+                            </div>
+                        </li>
+                        <li class="accordion__item">
+                            <div class="accordion__itemTitleWrap">
+                                <h3 class="accordion__itemTitle">Keytar synth salvia cred</h3>
+                                <div class="accordion__itemIconWrap">
+                                    <svg viewBox="0 0 24 24">
+                                        <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="black"
+                                                  stroke-miterlimit="10" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="accordion__itemContent">
+                                <p>내용입니다 </p>
+                                <p>내용입니다</p>
+                                <p>내용입니다 </p>
+                                <p>내용입니다 </p>
+                            </div>
+                        </li>
+                        <li class="accordion__item">
+                            <div class="accordion__itemTitleWrap">
+                                <h3 class="accordion__itemTitle">Hashtag jean short</h3>
+                                <div class="accordion__itemIconWrap">
+                                    <svg viewBox="0 0 24 24">
+                                        <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="black"
+                                                  stroke-miterlimit="10" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="accordion__itemContent">
+                                <p>내용입니다 </p>
+                                <p>내용입니다</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="col-md-4 third-col">
                 <div class="card">
                     <div class="col-md-12">
@@ -312,11 +387,12 @@
 <script type="text/javascript" src="lib/prefix/src/prefix.min.js"></script>
 <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="lib/gsap/src/minified/TweenMax.min.js"></script>
+<script type="text/javascript" src="lib/gsap/src/minified/TweenLite.min.js"></script>
 <script type="text/javascript" src="lib/gsap/src/minified/TimelineMax.min.js"></script>
 <script type="text/javascript" src="lib/gsap/src/minified/easing/EasePack.min.js"></script>
 <script type="text/javascript" src="lib/gsap/src/minified/plugins/CSSPlugin.min.js"></script>
-<script type="text/javascript" src="js/tag_event.js"></script>
-<script type="text/javascript" src="js/data_event.js"></script>
+<script type="text/javascript" src="js/greenhandle.js"></script>
+
 
 <script type="text/javascript">
     app.initialize();
