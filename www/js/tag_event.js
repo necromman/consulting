@@ -6,7 +6,7 @@ $(function(){
 		if($(this).index() == 0){
 			
 			$.ajax({
-				type : "POST",
+				type : "GET",
 				url : "http://localhost:8081/re/se",
 				dataType:"text",
 				data : {id : "testID", pw : "testPW"},
