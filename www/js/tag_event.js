@@ -5,8 +5,17 @@ $(function(){
 		
 		if($(this).index() == 0){
 			
-			v1_div1_Disclosure_event();
+			$.ajax({
+				type : "POST",
+				url : "http://localhost:8081/re/se",
+				dataType:"text",
+				data : {id : "testID", pw : "testPW"},
+				success : function(data){
+					alert(data)
+				}
+			});
 			
+			v1_div1_Disclosure_event();
 		}else{
 			
 			v1_div1_Choice_event();
