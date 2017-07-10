@@ -13,6 +13,8 @@ table{width: 100%;text-align: center}
 .height-20{height: 20%}
 
 /*==== font*/
+.font-11px{font-size: 11px}
+.font-12px{font-size: 12px}
 .font-1em{font-size: 1em}
 .font-2em{font-size: 2em}
 .font-3em{font-size: 3em;}
@@ -25,12 +27,22 @@ table{width: 100%;text-align: center}
 .text-right{text-align: right}
 .valign-wrapper{display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-align-items: center;-ms-flex-align: center;align-items: center;}
 
+/*==== margin*/
+.margin-top5{margin-top: 5px}
+
 /*==== padding*/
 .padding0{padding: 0 !important;}
 .padding0-15{padding: 0 15px !important;}
-
+.padding10-0{padding: 10px 0 !important;}
 /*==== border*/
 .border-none{border: none !important;}
+
+/*==== border*/
+.z-index10{z-index: 10}
+.z-index20{z-index: 20}
+.z-index30{z-index: 30}
+.z-index40{z-index: 40}
+
 
 
 
@@ -119,5 +131,5 @@ table{width: 100%;text-align: center}
 }
 
 /*=== device-select*/
-.device-select-wrap{position: absolute;width: 1280px;height:800px;margin: 0 !important;top: -800px;z-index: 10}
-.device-select-wrap .device-select
+.device-select-wrap{position: absolute;width: 1280px;height:800px;margin: 0 !important;top: -800px;z-index: 10;}
+.device-select-wrap .device-select{overflow: hidden}
