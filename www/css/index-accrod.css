@@ -1,3 +1,29 @@
+.plus-back:after {
+    content: "\f055";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: relative;
+    font-size: 1.7em;
+    color: black;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.accordion h1:before{
+    content: "\f107";
+    font-family: FontAwesome;
+    position: relative;
+    font-size: 1em;
+    color: #000;
+    top: 0;
+    right: -100%;
+}
+
+
+
 .accordion h1, h2, h3, h4 {
     cursor: pointer;
 }
@@ -16,7 +42,7 @@
     color: #333333;
 }
 .accordion h1:hover {
-    color: 000;
+    color: black;
 }
 .accordion h1:first-child {
 }
