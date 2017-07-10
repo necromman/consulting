@@ -10,6 +10,7 @@ $(function(){
 				url : "http://localhost:8081/re/se",
 				dataType:"text",
 				data : {id : "testID", pw : "testPW"},
+				
 				success : function(data){
 					alert(data)
 				}
