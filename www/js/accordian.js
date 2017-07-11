@@ -14,7 +14,9 @@ $(".accordion").click(function(e) {
                 return true;
             }
         });
+
         $(allAtDepth).slideUp("fast");
+
 
         //slideToggle target content and adjust bottom border if necessary
         subItem.slideToggle("fast",function() {

@@ -13,16 +13,27 @@
 }
 
 .accordion h1:before{
-    content: "\f107";
+    content: "\f078";
     font-family: FontAwesome;
     position: relative;
     font-size: 1em;
     color: #000;
     top: 0;
-    right: -100%;
+    right: -95%;
 }
 
+.accordion .h1-change:before{
+    content: "\f077";
+    font-family: FontAwesome;
+    position: relative;
+    font-size: 1em;
+    color: #000;
+    top: 0;
+    right: -95%;
+}
 
+.phone-descrip{margin: 0 !important;}
+.phone-descrip span{padding: 0}
 
 .accordion h1, h2, h3, h4 {
     cursor: pointer;
@@ -83,7 +94,7 @@
     background-color: #e0b040;
 }
 .accordion p {
-    padding: 15px 35px;
+    padding: 10px 15px;
     background-color: #ddd;
     color: #333;
     line-height: 1.3rem;

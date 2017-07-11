@@ -43,5 +43,11 @@ $(function () {
             d.reversed(!d.reversed())
         }
     })
+    
+    $(".accordion h1").click(function () {
+        $(this).toggleClass("h1-change");
+        $("h1").not(this).removeClass("h1-change");
+    })
+    
 
 })
