@@ -1,4 +1,4 @@
-.plus-back:after {
+.accordion h3:after{
     content: "\f055";
     font-family: FontAwesome;
     font-style: normal;
@@ -8,7 +8,20 @@
     font-size: 1.7em;
     color: black;
     top: 0;
-    right: 0;
+    right: 20px;
+    z-index: 1;
+}
+.accordion .h3-change:after{
+    content: "\f055";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: relative;
+    font-size: 1.7em;
+    color: crimson;
+    top: 0;
+    right: 20px;
     z-index: 1;
 }
 

@@ -48,6 +48,15 @@ $(function () {
         $(this).toggleClass("h1-change");
         $("h1").not(this).removeClass("h1-change");
     })
-    
+
+
+    $(".accordion h3").children("span").click(function (e) {
+        e.stopPropagation();
+    })
+    $(".accordion h3").click(function () {
+        $(this).toggleClass("h3-change");
+        $("h3").not(this).removeClass("h3-change");
+    })
+
 
 })
