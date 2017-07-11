@@ -43,10 +43,20 @@ $(function () {
             d.reversed(!d.reversed())
         }
     })
-    
+
+
     $(".accordion h1").click(function () {
         $(this).toggleClass("h1-change");
         $("h1").not(this).removeClass("h1-change");
+        $("h3").removeClass("h3-change");
+    })
+
+
+    $(".accordion h2").click(function () {
+        $(this).parent().slideToggle("fast");
+        $(this).parent().prev().toggleClass("h1-change");
+        $(this).parent().next().toggleClass("h1-change");
+        $(this).parent().next().next().slideDown();
     })
 
 
