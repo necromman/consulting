@@ -74,7 +74,8 @@ $(function () {
         }
     })
 
-    planbtn.on("click", function () {
+    planbtn.on("click", function (e) {
+        e.stopPropagation();
         if ($(".total-select-wrap").not(this).hasClass("active")) {
             planwrap.addClass("active");
             $(".total-select-wrap").not(planwrap).removeClass("active");
