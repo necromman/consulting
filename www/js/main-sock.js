@@ -2,45 +2,87 @@ $(function () {
 
     var app = $(".app");
     var deviselbtn = $(".devi-sel-btn");
+    var planbtn = $(".plan-btn");
     var deviwrap = $(".device-select-wrap");
+    var planwrap = $(".plan-select-wrap");
     var secondcol = $(".second-col");
     var thirdcol = $(".third-col");
     var fourthcol = $(".fourth-col");
 
+    var device;
+    var plan;
+    var b;
+    var c;
+    var d;
 
-    var a = TweenLite.to(deviwrap, 1.1, {
-        top: 0,
-        ease: Quart.easeInOut
-    }).reverse();
+    function deviceAnime() {
+        device = TweenLite.to(deviwrap, 1.1, {top: 0,ease: Quart.easeInOut});
+        b = TweenLite.to(secondcol, 1, {right: "-58.5%",ease: Quart.easeInOut});
+        c = TweenLite.to(thirdcol, 1, {left: "-8.2%",ease: Quart.easeInOut});
+        d = TweenLite.to(fourthcol, 1, {right: "-25%",ease: Quart.easeInOut});
+    }
 
-    var a = TweenLite.to(deviwrap, 1.1, {
-        top: 0,
-        ease: Quart.easeInOut
-    }).reverse();
+    function planAnime() {
+        plan = TweenLite.to(planwrap, 1.1, {top: 0,ease: Quart.easeInOut});
+        b = TweenLite.to(secondcol, 1, {right: "-58.5%",ease: Quart.easeInOut});
+        c = TweenLite.to(thirdcol, 1, {left: "-8.2%",ease: Quart.easeInOut});
+        d = TweenLite.to(fourthcol, 1, {right: "-25%",ease: Quart.easeInOut});
+    }
 
-    var b = TweenLite.to(secondcol, 1, {
-        right: "-58.5%",
-        ease: Quart.easeInOut
-    }).reverse();
-
-    var c = TweenLite.to(thirdcol, 1, {
-        left: "-8.2%",
-        ease: Quart.easeInOut
-    }).reverse();
-
-    var d = TweenLite.to(fourthcol, 1, {
-        right: "-25%",
-        ease: Quart.easeInOut
-    }).reverse();
+    function commonReversed() {
+        TweenLite.to(secondcol, 1, {right: "0%",ease: Quart.easeInOut});
+        TweenLite.to(thirdcol, 1, {left: "0%",ease: Quart.easeInOut});
+        TweenLite.to(fourthcol, 1, {right: "0%",ease: Quart.easeInOut});
+    }
 
 
-    deviselbtn.on("click",function(){
+    function partAni() {
+        if(!b.isActive()) {
+            if (deviwrap.hasClass("active")) {
+                plan.reversed(!plan.reversed());
+                deviceAnime()
+            }
+            if (planwrap.hasClass("active")) {
+                device.reversed(!device.reversed());
+                planAnime()
+            }
+        }
+    }
 
-        if(!a.isActive()){
-            a.reversed(!a.reversed())
-            b.reversed(!b.reversed())
-            c.reversed(!c.reversed())
-            d.reversed(!d.reversed())
+    function  resetAni() {
+        if(deviwrap.hasClass("active")){
+            device.reversed(!device.reversed());
+            commonReversed();
+        }
+        if(planwrap.hasClass("active")){
+            plan.reversed(!plan.reversed());
+            commonReversed();
+        }
+    }
+
+
+    deviselbtn.on("click", function () {
+        if ($(".total-select-wrap").not(this).hasClass("active")) {
+            deviwrap.addClass("active");
+            $(".total-select-wrap").not(deviwrap).removeClass("active");
+            partAni();
+
+        } else if (!$(".total-select-wrap").not(this).hasClass("active")) {
+            deviwrap.addClass("active");
+            deviwrap.not("div").removeClass("active")
+            deviceAnime();
+        }
+    })
+
+    planbtn.on("click", function () {
+        if ($(".total-select-wrap").not(this).hasClass("active")) {
+            planwrap.addClass("active");
+            $(".total-select-wrap").not(planwrap).removeClass("active");
+            partAni();
+        } else if (!$(".total-select-wrap").not(this).hasClass("active")) {
+            planwrap.addClass("active");
+            planwrap.not("div").removeClass("active")
+            planAnime();
         }
     })
 
@@ -53,14 +95,18 @@ $(function () {
 
 
     $(".accordion h2").click(function () {
+        var h2txt = $(this).text();
+        $(this).parent().prev().html(h2txt);
+
         $(this).parent().slideToggle("fast");
-        $(this).parent().prev().toggleClass("h1-change");
         $(this).parent().next().toggleClass("h1-change");
         $(this).parent().next().next().slideDown();
     })
 
 
     $(".accordion h3").children("span").click(function (e) {
+        resetAni();
+        $(".total-select-wrap").removeClass("active");
         e.stopPropagation();
     })
     $(".accordion h3").click(function () {

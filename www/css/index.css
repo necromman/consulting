@@ -37,12 +37,14 @@ table{width: 100%;text-align: center}
 /*==== border*/
 .border-none{border: none !important;}
 
-/*==== border*/
+/*==== z-index*/
 .z-index10{z-index: 10}
 .z-index20{z-index: 20}
 .z-index30{z-index: 30}
 .z-index40{z-index: 40}
 
+/*==== cursor*/
+.cursor-p{cursor: pointer}
 
 
 
@@ -61,7 +63,6 @@ table{width: 100%;text-align: center}
 .first-col .card{text-align: center;padding-top: 450px;border-left: none;}
 .first-col i{font-size: 4em}
 .first-col .card > div{border:none;padding: 0;}
-.first-col .devi-sel-btn{cursor: pointer}
 
 .second-col table tr td{color: red;padding: 4px 0;font-weight: 600;}
 .second-col table tr td:first-child{width: 40%;text-align: left;padding-left: 60px;color: inherit;font-weight: inherit}
@@ -131,5 +132,4 @@ table{width: 100%;text-align: center}
 }
 
 /*=== device-select*/
-.device-select-wrap{position: absolute;width: 1280px;height:800px;margin: 0 !important;top: -800px;z-index: 10;}
-.device-select-wrap .device-select{overflow: hidden}
+.total-select-wrap{position: absolute;width: 1280px;height:800px;margin: 0 !important;top: -800px;z-index: 10;}
