@@ -50,7 +50,7 @@ table{width: 100%;text-align: center}
 
 .app{background-color: #f2f4f7; min-height: 800px;max-height: 800px;height: 800px}
 .card{position: relative;border-left: 1px solid #ddd;border-right: 1px solid #ddd;background: #fff;height: 800px}
-@media (min-width: 992px){
+@media (min-width: 1px){
     .app{overflow: hidden}
     .app .container-fluid{width: 1280px; min-width: 1280px;overflow: hidden}
 }
