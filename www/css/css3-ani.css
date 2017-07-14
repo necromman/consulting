@@ -1,0 +1,5 @@
+*{transition: All 0.5s ease;}
+.a{transform: translate(-66%);}
+.b{transform: translate(66%);}
+.c{transform: translate(70%);}
+.d{transform: translate(-70%);}

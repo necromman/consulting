@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/css3-ani.css">
+    
+    <title>컨설팅</title>
+</head>
+
+<body>
+
+
+
+<div class="app">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1 first-col">
+                <div class="card">
+                    <div class="btn-a">
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                        <p>단말기선택</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                        <p>요금제선택</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                        <p>홈상품선택</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                        <p>결합상품선택</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 second-col">
+                <div class="card">
+                    <div class="col-md-12 well">
+                        <span class="col-md-12 font-2em">SKtelecom</span>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="col-md-12 padding0">
+                            <span class="col-md-6 font-2em text-left">전국민 무한 69</span>
+                            <span class="col-md-2"><i class="fa fa-square" aria-hidden="true"></i></span>
+                            <span class="col-md-2"><i class="fa fa-square" aria-hidden="true"></i></span>
+                            <span class="col-md-2"><i class="fa fa-square" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-md-12">
+                            <span class="col-md-6 text-left">0000년 00월 00일 공시기준</span>
+                            <span class="col-md-2">무제한</span>
+                            <span class="col-md-2">무제한</span>
+                            <span class="col-md-2">3GB</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 fee-info">
+                        <table>
+                            <tr>
+                                <td>기본요금</td>
+                                <td>69,000원</td>
+                            </tr>
+                            <tr>
+                                <td>요금할인프로그램</td>
+                                <td>
+                                    <div class="btn-group btn-group-xs" role="group" aria-label="" id="v1_div_choice">
+                                        <button type="button" class="btn btn-default" value="1">단말기공시지원</button>
+                                        <button type="button" class="btn btn-default" value="2">선택약정할인</button>
+                                    </div>
+                                </td>
+                                <!--<td>선택약정할인</td>-->
+                            </tr>
+                            <tr>
+                                <td>요금약정할인</td>
+                                <td>-19,000원</td>
+                            </tr>
+                            <tr class="sum-style">
+                                <td>매월 청구금액</td>
+                                <td>24,350원</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-12 well">
+                        <span class="col-md-12 font-2em">Galaxy S8</span>
+                    </div>
+
+                    <div class="col-md-12 devi-info">
+                        <table>
+                            <tr>
+                                <td>출고가</td>
+                                <td>999,900원</td>
+                            </tr>
+                            <tr>
+                                <td>단말기공시지원금</td>
+                                <td>-123,456원</td>
+                            </tr>
+                            <tr>
+                                <td>할부원금</td>
+                                <td>123,456원</td>
+                            </tr>
+                            <tr>
+                                <td>할부개월</td>
+                                <td>
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="" id="v1_div_Installment">
+                                        <button type="button" class="btn btn-default">12</button>
+                                        <button type="button" class="btn btn-default">18</button>
+                                        <button type="button" class="btn btn-default">24</button>
+                                        <button type="button" class="btn btn-default">30</button>
+                                        <button type="button" class="btn btn-default">36</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="devi-sum-style">
+                                <td>매월 청구금액</td>
+                                <td>24,350원</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="insta">할부수수료 연5.9%적용 금액(할부수수료 <span>0,000</span>원)</td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <div class="col-md-12 well">
+                        <span class="col-md-12">제휴/결합할인</span>
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table-padding0">
+                            <tr>
+                                <td>결합상품할인1</td>
+                                <td>-19,000원</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="padding0">기본료에 30% 할인</td>
+                            </tr>
+                            <tr>
+                                <td>결합상품할인2</td>
+                                <td>-19,000원</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="padding0">기본료에 30% 할인</td>
+                            </tr>
+                            <tr>
+                                <td>복지할인</td>
+                                <td>-19,000원</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="padding0">기본료에 30% 할인</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-12 well">
+                        <span class="col-md-12">부가서비스</span>
+                    </div>
+
+                    <div class="col-md-12">
+                        <table class="table-padding0">
+                            <tr>
+                                <td>편의 서비스</td>
+                                <td>19,800원</td>
+                            </tr>
+                            <tr>
+                                <td>폰케어 서비스</td>
+                                <td>19,800원</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="col-md-12 border-none text-right total-charge valign-wrapper">
+                        <div class="col-md-12">
+                            <p class="font-3em">89,650원</p>
+                            <p class="c-red font-weight600">VAT 포함금액(<span>2,345원</span>)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 third-col">
+                <div class="card">
+                    <div class="col-md-12">
+                        <span class="col-md-12 font-2em">samsung</span>
+                    </div>
+                    <div class="col-md-12 valign-wrapper row-2">
+                        <div class="col-md-12">
+                            <span class="col-md-6 font-2em text-left">갤럭시S8</span>
+                            <span class="col-md-2"><i class="fa fa-square" aria-hidden="true"></i></span>
+                            <span class="col-md-2"><i class="fa fa-square" aria-hidden="true"></i></span>
+                            <span class="col-md-2"><i class="fa fa-square" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 devi-pic valign-wrapper text-center">
+                        <div class="col-md-12">
+                            <img src="img/placeholder.jpg" alt="스마트폰이미지">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 valign-wrapper text-center border-none height-20">
+                        <div class="col-md-12 shipment">
+                            <span>출고가</span>
+                            <span class="font-3em">999,900</span>
+                            <span class="font-2em">&#8361;</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 fourth-col">
+                <div class="card">
+                    <div class="col-md-12 valign-wrapper">
+                        <span class="col-md-8 font-2em">GalaxyS8</span>
+                        <span class="col-md-4">SM-G950K</span>
+                    </div>
+                    <div class="col-md-12 devi-spec-wrap">
+
+                        <div class="col-md-12 devi-spec">
+                            <div class="col-md-12 valign-wrapper">
+                                <div class="col-md-4 devi-spec-i">
+                                    <i class="fa fa-square" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="spec-sub">os</div>
+                                    <div>안드로이드 7.0누가</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 valign-wrapper">
+                                <div class="col-md-4 devi-spec-i">
+                                    <i class="fa fa-square" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="spec-sub">cpu</div>
+                                    <div>엑시노스9 8895</div>
+                                    <div>2.5_1.7GHz 옥타코어</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 valign-wrapper">
+                                <div class="col-md-4 devi-spec-i">
+                                    <i class="fa fa-square" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="spec-sub">camera</div>
+                                    <div>전면 800만 화소</div>
+                                    <div>후면면 1,800만 화소</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 valign-wrapper">
+                                <div class="col-md-4 devi-spec-i">
+                                    <i class="fa fa-square" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="spec-sub">memory</div>
+                                    <div><span>RAM</span><span>4GB</span></div>
+                                    <div><span>내장메모리</span><span>64GB</span></div>
+                                    <div><span>microSD</span><span>최대 256GB</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ratings valign-wrapper">
+                            <div class="col-md-5">Ratings</div>
+                            <div class="col-md-6 rating" title="4 of 5"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="lib/prefix/src/prefix.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="lib/gsap/src/minified/TweenMax.min.js"></script>
+<script type="text/javascript" src="lib/gsap/src/minified/TimelineMax.min.js"></script>
+<script type="text/javascript" src="lib/gsap/src/minified/easing/EasePack.min.js"></script>
+<script type="text/javascript" src="lib/gsap/src/minified/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="js/tag_event.js"></script>
+<script type="text/javascript" src="js/data_event.js"></script>
+
+<script type="text/javascript">
+    app.initialize();
+</script>
+<script>
+    $(function () {
+        $(".btn-a").click(function () {
+            $(".first-col").addClass("a");
+            $(".second-col").addClass("b");
+            $(".third-col").addClass("c");
+            $(".fourth-col").addClass("d");
+        })
+    })
+</script>
+
+</body>
+
+</html>
