@@ -50,10 +50,10 @@ table{width: 100%;text-align: center}
 
 .app{background-color: #f2f4f7; min-height: 800px;max-height: 800px;height: 800px}
 .card{position: relative;border-left: 1px solid #ddd;border-right: 1px solid #ddd;background: #fff;height: 800px}
-@media (min-width: 1px){
+@media (min-width: 1280px){
     .app{overflow: hidden}
-    .app .container-fluid{width: 1280px; min-width: 1280px;overflow: hidden}
 }
+.app .container-fluid{width: 1280px; min-width: 1280px}
 .card > div{border-bottom: 1px solid #ddd;padding: 5px 0;}
 
 .first-col,.second-col,.third-col,.fourth-col{z-index: 20;}
