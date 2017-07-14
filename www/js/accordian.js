@@ -1,3 +1,12 @@
+$(".btn-a").click(function () {
+    $(".first-col").addClass("a");
+    $(".second-col").addClass("b");
+    $(".third-col").addClass("c");
+    $(".fourth-col").addClass("d");
+})
+
+
+
 var headers = ["H1","H3"];
 
 $(".accordion").click(function(e) {
